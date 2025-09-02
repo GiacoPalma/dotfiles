@@ -23,6 +23,7 @@ return {
                     "eslint",
                     "html",
                     "cssls",
+                    "jdtls",
                 },
                 automatic_enable = true
             })
@@ -41,6 +42,19 @@ return {
                     Lua = {
                         diagnostics = {
                             globals = { "vim" }
+                        }
+                    }
+                }
+            })
+
+            vim.lsp.config('pylsp', {
+                capabilities = capabilities,
+                settings = {
+                    pylsp = {
+                        plugins = {
+                            pycodestyle = {
+                                maxLineLength = 100
+                            }
                         }
                     }
                 }

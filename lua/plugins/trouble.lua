@@ -22,6 +22,11 @@ return  {
             "]d",
             "<cmd>Trouble diagnostics previous<cr>",
             desc = "Diagnostics previous"
+        },
+        {
+            "<leader>xQ",
+            "<cmd>Trouble qflist toggle<cr>",
+            desc = "Quickfix List (Trouble)"
         }
     }
 }
